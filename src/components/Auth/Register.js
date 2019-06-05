@@ -12,6 +12,7 @@ class Register extends Component {
       passwordConfirmation:'',
       errors:[],
       loading : false,
+      userRefs: firebase.database().ref("users")
   }
 
 
@@ -136,7 +137,7 @@ showerror = ( errors,name) =>errors.some(error =>  error.message.toLowerCase().i
                          </Message>
                      ) }
           <Message>
-            Click here to ? <Link to="/register">Register </Link>  
+            Click here to ? <Link to="/login">Login</Link>  
           </Message>
 
         </Grid.Column>
