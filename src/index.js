@@ -10,7 +10,9 @@ import 'semantic-ui-css/semantic.min.css'
 import firebase  from './firebase'
 import { Provider } from 'react-redux'
 import {createStore} from 'redux'
-import {re} from 'redux-devtools-extension'
+import {composeWithDevTools} from 'redux-devtools-extension'
+
+const store =createStore(()=>{}, composeWithDevTools())
 
 class  Root extends React.Component {
     componentDidMount (){
@@ -35,7 +37,9 @@ class  Root extends React.Component {
 
 
 ReactDOM.render(
+   <Provider store={store}>
     <Router>
         <RootwithAuth/>
-    </Router>, document.getElementById('root'));
+    </Router>
+    </Provider>, document.getElementById('root'));
 registerServiceWorker();
