@@ -6,6 +6,7 @@ import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router,Route , Switch} from 'react-router-dom'
+import 'semantic-ui-css/semantic.min.css'
 
 const Root = () =>(
     <Router>
