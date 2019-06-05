@@ -76,7 +76,7 @@ showerror = ( errors,name) =>errors.some(error =>  error.message.toLowerCase().i
                      className={this.showerror(errors,"password") }
                      placeholder='Password'   type='password'  />
 
-                    <Button disabled={loading} className={loading ?"loading" :''} type="submit" color="green" fluid size='large'>Register</Button>
+                    <Button disabled={loading} className={loading ?"loading" :''} type="submit" color="green" fluid size='large'>Login</Button>
                     </Segment>
 
                  </Form>
@@ -86,7 +86,7 @@ showerror = ( errors,name) =>errors.some(error =>  error.message.toLowerCase().i
                          </Message>
                      ) }
           <Message>
-            login a user ? <Link to="/login">Login </Link>  
+              Register here ? <Link to="/register">Register </Link>  
           </Message>
 
         </Grid.Column>
