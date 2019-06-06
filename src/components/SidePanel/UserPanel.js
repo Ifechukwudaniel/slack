@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import {Grid, Header, Icon, Dropdown} from 'semantic-ui-react'
+
+import { connect } from 'react-redux'
+
 import firebase from '../../firebase'
 
  class UserPanel extends Component {
+   
    dropdownOptions =()=>[
     {
         key:"users",
@@ -10,7 +14,7 @@ import firebase from '../../firebase'
         disabled: true
     },
     {
-        key:"Avater",
+        key:"avater",
         text:<span> Change Avater </span>,
     },
     {
@@ -18,7 +22,13 @@ import firebase from '../../firebase'
         text:<span onClick={ this.handleSignOut} > Sign Out </span>
     }
     ]
-  
+    handleSignOut =()=>{
+      firebase
+       .auth()
+       .signOut().then( 
+           console.log("signed out")
+       )
+   }
 
   render() {
     return (
@@ -41,4 +51,7 @@ import firebase from '../../firebase'
     )
   }
 }
-export default  UserPanel 
+
+
+
+export default UserPanel

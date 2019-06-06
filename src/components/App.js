@@ -25,4 +25,8 @@ const App = () => {
   )
 }
 
+const mapStateToProps = state => ({
+  currentUser : state.user.currentUser
+})
+
 export default App

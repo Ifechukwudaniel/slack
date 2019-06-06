@@ -27,7 +27,7 @@ class Login extends Component {
      firebase
      .auth()
      .signInWithEmailAndPassword(email,password).then( SignedinUser=>{
-          console.log( SignedinUser)
+         // console.log( SignedinUser)
      }
       
      ).catch(error=>{
