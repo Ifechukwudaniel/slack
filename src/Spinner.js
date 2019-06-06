@@ -5,7 +5,7 @@ import { Dimmer, Loader} from 'semantic-ui-react'
   render() {
     return (
         <Dimmer active>
-            <Loader size="huge" text="Loading info ....." />
+             <Loader size="massive">Loading ....... </Loader>
         </Dimmer>
     )
   }
