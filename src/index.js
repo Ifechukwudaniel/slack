@@ -7,7 +7,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import firebase from "./firebase";
 
 import "semantic-ui-css/semantic.min.css";
-IMp
+import Spinner from './Spinner'
 
 import {
   BrowserRouter as Router,
@@ -37,7 +37,7 @@ class Root extends React.Component {
   }
 
   render() {
-    return this.props.isLoading?  (
+    return this.props.isLoading ? <Spinner/>  :(
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/login" component={Login} />
