@@ -4,9 +4,10 @@ import UserPanel from "./UserPanel"
 
  class SidePanel extends Component {
   render() {
+    const { currentUser} = this.props
     return (
         <Menu size="large" fixed="left" vertical style = {{backgroundColor: '#4c3c4c'}}>
-          <UserPanel/>
+          <UserPanel currentUser={currentUser}/>
         </Menu>
       
     );
