@@ -1,6 +1,10 @@
 import  {
   SET_USER,
-  CLEAR_USER} from './types'
+  CLEAR_USER,
+   SET_CURRENT_CHANNEL } from './types'
+
+
+// Users Actions
 
 export const setUser = user => {
   return{
@@ -15,4 +19,16 @@ export const clearUser = () => {
   return{
     type: CLEAR_USER
   }
+}
+
+
+// Channel Actions
+
+export const setCurrentChannel = channel =>{
+   return {
+     type:SET_CURRENT_CHANNEL,
+     payload :{
+        currentChannel : channel
+     }
+   }
 }
