@@ -33,7 +33,7 @@ import Channels from './Channels'
   render() {
     const {currentUser} = this.state
     return (
-     <Grid  style={{backgroundColor:  '#4c3c4c',}}>
+     <Grid style={{ background: "#4c3c4c" }}>
        <Grid.Column>
            <Grid.Row style={{ padding: '1.2em', margin: '0', }} >
              {/* Application Header */}
@@ -49,7 +49,6 @@ import Channels from './Channels'
                  </span> } options={this.dropdownOptions()}/> 
               </Header>
            </Grid.Row>
-           <Channels currentUser={this.props.currentUser}/>
        </Grid.Column>
      </Grid>
     )

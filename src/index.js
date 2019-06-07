@@ -7,6 +7,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import firebase from "./firebase";
 
 import "semantic-ui-css/semantic.min.css";
+
 import Spinner from './Spinner'
 
 import {
