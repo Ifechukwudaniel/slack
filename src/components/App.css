@@ -22,3 +22,10 @@ body
   right: 1em;
   z-index: 200;
 }
+
+/* Chart self */
+.message__self{
+  border-left: 2px solid orange;
+  padding-left: 8px;
+  background-color: beige
+}
