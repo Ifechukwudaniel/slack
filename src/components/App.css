@@ -29,3 +29,9 @@ body
   padding-left: 8px;
   background-color: beige
 }
+
+/* images in chat */
+.message__image{
+  padding: 1rem
+}
+
